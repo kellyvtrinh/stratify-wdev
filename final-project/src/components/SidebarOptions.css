@@ -1,6 +1,7 @@
 .sidebarOptions {
     display: flex;
-    align-items: center;
+    /* aligns icons with text */
+    align-items: center; 
     color: grey;
     height: 40px;
     cursor: pointer;
@@ -10,3 +11,8 @@
 .sidebarOptions:hover { 
     color: white;
 }
+
+.sidebarOptions_icon {
+    padding: 10px;
+}
+

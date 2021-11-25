@@ -1,0 +1,8 @@
+.sidebar {
+    border: 1px black;
+    height: 100vh;
+    flex: 0.2;
+    color: white;
+    padding: 10px;
+    background-color: black;
+}
