@@ -1,6 +1,7 @@
 import React from 'react'
 import Individual_artist from './Individual_artist'
 
+
 /*
 A running list of favorite artist for the home page. 
 */
