@@ -9,13 +9,11 @@ Body component contains favorite artist and favorite tracks.
 
 function Homepage() {
     return (
-        <>
+        <div className="homepage">
             <Sidebar />
-
-
             <Body />
 
-        </>
+        </div>
 
     )
 

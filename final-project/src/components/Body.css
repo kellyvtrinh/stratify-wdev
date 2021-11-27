@@ -1,0 +1,51 @@
+/* Import font poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+
+/* Master theme for the entire home page. */
+.homepage {
+    display: flex;
+}
+/* Master theme for the home page body, not the sidebar. */
+.body {
+    background-color: black;
+    font-family: "Poppins";
+    color: white;
+    width: 100%;
+}
+
+/* The favorite bar (for favorite artists and favorite tracks). */
+.fav {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+}
+
+/* The individual items in the favorite bar (individual artist or individual track). */
+.individual {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+/* The text section below each item in the favorite bar: 
+consists of the name of track and its artist; or the artist name. */
+.text {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.name {
+    display: flex;
+    font-weight: bold;
+    margin-bottom: 0px;
+    justify-content: center;
+}
+
+.track_artist {
+    display: flex;
+    margin-top: 0px;
+    justify-content: center;
+}
+
+

@@ -1,0 +1,15 @@
+/* Import font poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+
+
+.ind_artist {
+    display: flex;
+    flex-direction: column;
+}
+
+.artist_name {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: "poppins";
+}
