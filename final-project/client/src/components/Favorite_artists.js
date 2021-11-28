@@ -8,7 +8,7 @@ A running list of favorite artist for the home page.
 Displays top 15 top artists. 
 */
 
-function Favorite_artists({ artists }) {
+function Favorite_artists() {
 
     const [{ top_artist }, dispatch] = useDataLayerValue();
 

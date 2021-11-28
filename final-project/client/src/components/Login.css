@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+
+/* Style of the login button. */
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1DB954;
+    width: 400px;
+    height: 100px;
+    border-radius: 15px;
+}
+
+/* Style of the login page. */
+.login-page { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font: "Poppins";
+    font-size: 35px;
+}

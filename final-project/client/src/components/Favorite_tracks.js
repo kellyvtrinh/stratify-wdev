@@ -4,7 +4,7 @@ import "./Body.css"
 import { useDataLayerValue } from '../../src/DataLayer'
 
 
-export default function Favorite_tracks({ tracks }) {
+export default function Favorite_tracks() {
 
     const [{ top_track }, dispatch] = useDataLayerValue();
 

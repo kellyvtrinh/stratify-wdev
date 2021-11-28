@@ -1,0 +1,64 @@
+* {
+    margin: 8px;
+    padding: 0px;
+    text-decoration: none;
+    box-shadow: none;
+    outline: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 60px;
+    width: 800px;
+}
+
+.title-group {
+    display: flex;
+    flex-direction: row;
+}
+
+h1, h2, p, small {
+    font-family: 'Hack', monospace;
+    color: #444
+}
+
+p {
+    line-height: 130%;
+}
+
+button, button:visited {
+    width: 200px;
+    height: 30px;
+    background: rgb(84, 84, 255);
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(101, 101, 255);
+}
+
+button:active {
+    background-color: rgb(91, 91, 250);
+}
+
+.heart {
+    cursor: pointer;
+}
+
+.apod {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.apod-list {
+    display: flex;
+    flex-direction: row;
+}

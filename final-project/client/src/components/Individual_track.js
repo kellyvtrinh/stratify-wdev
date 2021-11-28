@@ -1,5 +1,4 @@
 import React from 'react'
-import peach_cat_glasses from './peach_cat_glasses.jpeg' // dummy image 
 import "./Body.css"
 /*
 Each individual artist to be displayed on the favorite artists list on the homepage.
