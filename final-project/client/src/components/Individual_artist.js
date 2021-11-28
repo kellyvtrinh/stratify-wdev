@@ -11,7 +11,7 @@ Note: currently using dummy image
 function Individual_artist({ artist }) {
     return (
         <div className="individual">
-            <img className="artist_img" src={artist.images[0].url} alt="artist image" /> 
+            <img className="img" src={artist.images[0].url} alt="artist image" /> 
             <p className="name">{artist.name}</p>
         </div>
     )

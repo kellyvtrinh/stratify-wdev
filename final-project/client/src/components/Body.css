@@ -28,10 +28,11 @@
     padding-right: 20px;
 }
 
-.artist_img {
-    height: 300px;
-    width: 300px;
+.img {
+    height: 200px;
+    width: 200px;
 }
+
 
 /* The text section below each item in the favorite bar: 
 consists of the name of track and its artist; or the artist name. */
@@ -40,9 +41,19 @@ consists of the name of track and its artist; or the artist name. */
     flex-flow: column wrap;
 }
 
+/* Main text under the individual artist or track. */
 .name {
     display: flex;
     font-weight: bold;
+    margin-bottom: 0px;
+    justify-content: center;
+}
+
+/* Supporting details below the main text. */
+.details {
+    display: flex;
+    font-weight: light;
+    margin-top: 0px;
     margin-bottom: 0px;
     justify-content: center;
 }

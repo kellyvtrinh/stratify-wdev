@@ -14,7 +14,7 @@ function App() {
   const [token, setToken] = useState(null);
   // dispatch is a way for us to access the data in the data layer 
   // pulling user from data layer using 
-  const [{ user }, dispatch ] = useDataLayerValue();
+  const [{ top_track }, dispatch ] = useDataLayerValue();
 
   /* Function to extract the code from the URL that is given by the Spotify API after user gives permission. */
   const getTokenFromUrl = () => {
@@ -39,7 +39,7 @@ function App() {
     // erase the token from the URL to hide the token 
     window.location.hash = "";
 
-    if (_token) {
+    if (_token) { // if successfully authenticated and received a token
 
       dispatch({
         type: "SET_TOKEN",
@@ -54,10 +54,29 @@ function App() {
           type: "SET_USER",
           user: user,
         })
-      })  
+      })
+      
+      spotify.getMyTopArtists()
+      .then((top_artist) => {
+        dispatch({ 
+          type: "SET_TOP_ARTIST",
+          top_artist: top_artist,
+        })
+
+      })
+
+      spotify.getMyTopTracks() 
+      .then((top_track) => {
+        dispatch({
+          type: "SET_TOP_TRACK",
+          top_track: top_track,
+        })
+      })
 
     }
   }, [])
+
+  console.log("top_track", top_track)
   
   return (
     <>
