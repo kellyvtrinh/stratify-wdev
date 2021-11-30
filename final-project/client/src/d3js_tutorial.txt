@@ -1,0 +1,15 @@
+
+D3 is not limited to just charts; you can do everything with it. 
+You may want to use chart.js instead. 
+
+d3.select('div') // select the first div (this can also be class name)
+.selectAll('p') // select all paragraphs within the div
+.data([1, 2, 3]) // bind this data to the div
+.enter() // return all the missing paragraphs (one for each data point)
+.append('p') // create a new paragraph for each missing paragraph 
+.text(dta => dta); // each new paragraph contains the corresponding data 
+
+
+You can use SVG elements, which creates a coordinate system. In CSS, 
+we manipulate positions through flexboxes. In SVG, we can manipulate 
+positions through numbers. <svg> </svg>

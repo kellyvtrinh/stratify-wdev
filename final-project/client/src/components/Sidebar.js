@@ -5,6 +5,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import AnalyticsIcon from '@mui/icons-material/Analytics';
 
 function Sidebar() {
+ 
     return (
         <div className="sidebar">
             {/* TODO: replace this with logo */}

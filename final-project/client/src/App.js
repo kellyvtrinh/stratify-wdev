@@ -5,7 +5,9 @@ import { useState, useEffect } from 'react';
 import SpotifyWebApi from 'spotify-web-api-js';
 import Login from './components/Login';
 import Homepage from './components/Homepage';
+import Analytics from './components/Analytics';
 import { useDataLayerValue } from './DataLayer';
+
 
 const spotify = new SpotifyWebApi();
 
@@ -13,8 +15,8 @@ function App() {
 
   const [token, setToken] = useState(null);
   // dispatch is a way for us to access the data in the data layer 
-  // pulling user from data layer using 
-  const [{ top_track }, dispatch ] = useDataLayerValue();
+  // pulling data from data layer  
+  const [{ homepage }, dispatch ] = useDataLayerValue();
 
   /* Function to extract the code from the URL that is given by the Spotify API after user gives permission. */
   const getTokenFromUrl = () => {
@@ -56,6 +58,15 @@ function App() {
         })
       })
       
+      spotify.getUserPlaylists({limit : 10})
+      .then((playlists) => {
+        dispatch({
+          type: "SET_USER_PLAYLIST",
+          user_playlists: playlists,
+        })
+      })
+
+
       spotify.getMyTopArtists()
       .then((top_artist) => {
         dispatch({ 
@@ -73,10 +84,10 @@ function App() {
         })
       })
 
+
     }
   }, [])
 
-  console.log("top_track", top_track)
   
   return (
     <>
@@ -86,11 +97,13 @@ function App() {
         
         If the token is successfully extracted from URL, display the homepage. 
         Else, re-direct to login page.
+        
+        <Analytics /> <== analytics components
 
         */
 
         token ? (
-          <Homepage />
+          <Homepage /> 
         ) : (
           <Login />
         )

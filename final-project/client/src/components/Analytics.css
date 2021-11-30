@@ -1,0 +1,36 @@
+.analytics {
+    display: flex;
+    background-color: black;
+    font-family: "Poppins";
+    color: white;
+}
+
+.analytics_body {
+    display: flex;
+    width: 100%;
+    background: linear-gradient(rgb(36, 36, 36), black);
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 30px;
+
+}
+
+/* .sidebar {
+    position: relative;
+
+} */
+
+.no_tracks {
+    display: flex;
+    background-color: #7ae39e;
+    width: 85%;
+    height: 45%;
+
+}
+
+.timeline {
+    display: flex;
+    background-color: #1da04b;
+    width: 85%;
+    height: 45%;
+}

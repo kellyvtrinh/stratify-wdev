@@ -19,7 +19,7 @@ our app has received permission from the user.
 export default function Login() {
 
     const authEndpoint = 'https://accounts.spotify.com/authorize';
-    const clientId = ""; // ENTER CLIENT ID HERE 
+    const clientId = "6fda7e982eb7417d8b84b93b446a6a26"; // ENTER CLIENT ID HERE 
 
     // link to re-direct user to after user has allowed for authentication 
     const redirectUri = 'http://localhost:3000';

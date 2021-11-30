@@ -4,6 +4,8 @@ export const initialState = {
     token: null,
     top_artist: null,
     top_track: null,
+    user_playlists: null,
+    homepage: true
 }
 
 const reducer = (state, action) => {
@@ -29,6 +31,11 @@ const reducer = (state, action) => {
             return {
                 ...state, 
                 top_track: action.top_track
+            }
+        case 'SET_USER_PLAYLIST': 
+            return {
+                ...state,
+                user_playlists: action.user_playlists
             }
         default: 
             return state; // just return the state without modifying it
