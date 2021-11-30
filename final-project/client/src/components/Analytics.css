@@ -22,7 +22,6 @@
 
 .no_tracks {
     display: flex;
-    background-color: #7ae39e;
     width: 85%;
     height: 45%;
 
@@ -30,7 +29,7 @@
 
 .timeline {
     display: flex;
-    background-color: #1da04b;
+    background-color: #79c7c5;
     width: 85%;
     height: 45%;
 }

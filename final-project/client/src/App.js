@@ -66,7 +66,6 @@ function App() {
         })
       })
 
-
       spotify.getMyTopArtists()
       .then((top_artist) => {
         dispatch({ 
@@ -103,7 +102,7 @@ function App() {
         */
 
         token ? (
-          <Homepage /> 
+          <Analytics /> 
         ) : (
           <Login />
         )
